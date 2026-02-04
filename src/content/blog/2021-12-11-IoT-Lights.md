@@ -1,5 +1,5 @@
 ---
-tile: "IoT Lights"
+title: "IoT Lights"
 description: "A collection of IoT light bulbs and related resources."
 pubDate: 2021-12-11
 categories:
