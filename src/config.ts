@@ -1,7 +1,7 @@
 export default {
   site: {
-    title: "David's Blog",
-    subtitle: "David's Blog Subtitle",
+    title: "World Warrior",
+    subtitle: "",
     description: "David's blog",
     keywords: "David, blog, astro, theme",
     author: "David Wong",
@@ -21,7 +21,7 @@ export default {
     { name: "about", url: "/about" },
   ],
 
-  banner: "/images/banner.webp", // which means themes/reimu/source/images/banner.webp
+  banner: "/images/ryu-banner-1920w.jpg", // which means themes/reimu/source/images/banner.webp
   // You can also write it in the form of the following url
   // banner: "https://example.com"
 
@@ -30,13 +30,13 @@ export default {
     enable: true,
     srcset: [
       { src: "/images/banner-600w.webp", media: "(max-width: 479px)" },
-      { src: "/images/banner-800w.webp", media: "(max-width: 799px)" },
+      { src: "/images/ryu-banner-1920w.jpg", media: "(max-width: 1920px)" },
       { src: "/images/banner.webp", media: "(min-width: 800px)" },
     ],
   },
 
   footer: {
-    since: 2020, // 2020 - current year
+    since: 2017, // 2017 - current year
     powered: true,
     count: true,
     busuanzi: true,
