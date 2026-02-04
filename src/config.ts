@@ -1,11 +1,11 @@
 export default {
   site: {
-    title: "My Blog",
-    subtitle: "My Blog Subtitle",
-    description: "D-Sketon's blog",
-    keywords: "D-Sketon, blog, astro, theme",
-    author: "D-Sketon",
-    language: "zh-CN",
+    title: "David's Blog",
+    subtitle: "David's Blog Subtitle",
+    description: "David's blog",
+    keywords: "David, blog, astro, theme",
+    author: "David Wong",
+    language: "en-NZ",
   },
 
   sidebar: {
@@ -58,11 +58,11 @@ export default {
 
   social: {
     // email: mailto:xxx@gmail.com
-    github: "https://github.com/yourname",
-    google: "https://plus.google.com/yourname",
-    twitter: "https://twitter.com/yourname",
-    facebook: "https://www.facebook.com/yourname",
-    // instagram: https://www.instagram.com/yourname
+    github: "https://github.com/dvkwong",
+    //google: "https://plus.google.com/dvkwong",
+    twitter: "https://x.com/dvkwong",
+    //facebook: "https://www.facebook.com/dvkwong",
+    // instagram: https://www.instagram.com/dvkwong
     // linkedin: https://www.linkedin.com/in/yourname
     // pinterest: https://www.pinterest.com/yourname
     // youtube: https://www.youtube.com/channel/yourname
@@ -90,7 +90,7 @@ export default {
     appKey: "", // leancloud application app key
     pageSize: 10, // comment list page size
     avatar: "mp", // gravatar style https://valine.js.org/#/avatar
-    lang: "zh-cn", // i18n: zh-cn/en
+    lang: "en-NZ", // i18n: zh-cn/en
     placeholder: "Just go go", // valine comment input placeholder(like: Please leave your footprints )
     guest_info: "nick,mail,link", //valine comment header info
     recordIP: true, // whether to record the IP address of the commenters
@@ -103,7 +103,7 @@ export default {
   waline: {
     enable: false,
     serverURL: "",
-    lang: "zh-CN",
+    lang: "en-NZ",
     locale: {}, // https://waline.js.org/guide/features/i18n.html#%E8%87%AA%E5%AE%9A%E4%B9%89%E8%AF%AD%E8%A8%80
     emoji: [
       "https://unpkg.com/@waline/emojis@1.2.0/weibo",
@@ -168,7 +168,7 @@ export default {
 
   friend: [
     {
-      name: "D-Sketon",
+      name: "David Wong",
       url: "https://d-sketon.github.io/",
       desc: "Main Site with hexo-theme-reimu",
       avatar: "https://d-sketon.github.io/avatar/avatar.webp",
@@ -190,7 +190,7 @@ export default {
 
   preloader: {
     enable: true,
-    text: "少女祈祷中...",
+    text: "Loading...",
     rotate: true, // whether to rotate the icon
   },
 
@@ -244,9 +244,9 @@ export default {
     ]
   },
   triangle_badge: {
-    enable: false,
+    enable: true,
     type: "github",
-    link: "https://github.com/D-Sketon/astro-theme-reimu",
+    link: "https://github.com/dvkwong",
   },
   // whether to display the notification when the article is outdated
   outdate: {
