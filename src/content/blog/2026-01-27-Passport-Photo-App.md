@@ -7,7 +7,7 @@ categories:
 tags:
     - Photo
     - Portfolio
-cover: /public/images/banner-600w.webp
+cover: /images/banner-600w.webp
 ---
 
 Having a good passport photo is essential for travel documents. Traditional passport photo booths can be inconvenient and often produce subpar results. Enter the [Passport Photo App](https://passportphoto.app/), an AI-powered solution that allows users to create compliant passport photos from the comfort of their own home.
