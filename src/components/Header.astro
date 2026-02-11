@@ -85,10 +85,9 @@ const sortedPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDa
     )
   }
   <div id="header-outer" class="outer">
-    <!-- No need to display title here anymore
     <div id="header-title" class="inner">
       <slot />
-    </div> -->
+    </div>
   </div>
 </header>
 <SearchBox client:load searchList={sortedPosts} url={BASE_URL} />
