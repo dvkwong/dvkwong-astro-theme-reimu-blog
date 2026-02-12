@@ -7,7 +7,7 @@
   "env": {
     "production": {
       "vars": {
-        "site-url": "https://dvkwong-blog.dvkwong0.workers.dev",
+        "site-url": "https://feature-initialmigration-dvkwong-blog.dvkwong0.workers.dev/",
         "base-url": "/"
       }
     }
