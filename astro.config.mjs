@@ -20,7 +20,7 @@ export default defineConfig({
   site: isProd
     ? 'https://dvkwong-blog.dvkwong0.workers.dev'
     : 'http://localhost:4321',
-  base: isProd ? '/' : 'dvkwong/',
+  base: isProd ? '' : 'dvkwong/',
   markdown: {
     remarkPlugins: [remarkMath],
     rehypePlugins: [rehypeKatex, rehypeLazyLoadImage],
