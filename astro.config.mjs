@@ -13,10 +13,14 @@ import Font from 'vite-plugin-font';
 import mermaid from './src/plugins/mermaid.mjs';
 import rehypeLazyLoadImage from './src/plugins/lazyLoadImage.mjs';
 
+const isProd = process.env.NODE_ENV === 'production';
+
 // https://astro.build/config
 export default defineConfig({
-  site: 'http://localhost:4321',
-  base: 'dvkwong/',
+  site: isProd
+    ? 'https://dvkwong-blog.dvkwong0.workers.dev'
+    : 'http://localhost:4321',
+  base: isProd ? '/' : 'dvkwong/',
   markdown: {
     remarkPlugins: [remarkMath],
     rehypePlugins: [rehypeKatex, rehypeLazyLoadImage],
