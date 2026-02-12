@@ -110,6 +110,9 @@ pnpm run build
 
 # Preview build
 pnpm run preview
+
+# Run cloudflare workers for local development
+npx wrangler dev -e dev --local --port 4321
 ```
 
 ### Project Structure
@@ -155,7 +158,7 @@ pnpm run preview
 └── tsconfig.json
 ```
 
-Any static assets (such as images) can be placed in the `public/` directory.  
+Any static assets (such as images) can be placed in the `public/` directory.
 All blog posts are stored in the `src/content/blog` directory, and the about page is stored in the `src/pages` directory.
 
 ## Configuration

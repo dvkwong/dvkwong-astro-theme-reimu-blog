@@ -4,7 +4,12 @@
   "assets": {
     "directory": "./dist"
   },
-  "vars": {
-    "NODE_ENV": "production"
+  "env": {
+    "production": {
+      "vars": {
+        "site-url": "https://dvkwong-blog.dvkwong0.workers.dev",
+        "base-url": "/"
+      }
+    }
   }
 }
