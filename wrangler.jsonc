@@ -4,12 +4,8 @@
   "assets": {
     "directory": "./dist"
   },
-  "env": {
-    "production": {
-      "vars": {
-        "site-url": "https://feature-initialmigration-dvkwong-blog.dvkwong0.workers.dev/",
-        "base-url": "/"
-      }
-    }
+  "vars": {
+    "SITE_URL": "https://feature-initialmigration-dvkwong-blog.dvkwong0.workers.dev/",
+    "BASE_URL": "/"
   }
 }
