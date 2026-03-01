@@ -1,4 +1,5 @@
 // https://github.com/nakamuraos/astro-mermaid
+import { visit } from 'unist-util-visit';
 /**
  * Helper function to HTML-escape text content
  * This ensures HTML tags in mermaid diagrams are preserved as text
@@ -19,8 +20,6 @@ function escapeHtml(text) {
  */
 function remarkMermaidPlugin(options = {}) {
   return async function transformer(tree, file) {
-    const { visit } = await import('unist-util-visit');
-
     let mermaidCount = 0;
 
     visit(tree, 'code', (node, index, parent) => {
@@ -99,8 +98,6 @@ function serializeHastChildren(children) {
  */
 function rehypeMermaidPlugin(options = {}) {
   return async function transformer(tree, file) {
-    const { visit } = await import('unist-util-visit');
-
     let mermaidCount = 0;
 
     visit(tree, 'element', (node) => {

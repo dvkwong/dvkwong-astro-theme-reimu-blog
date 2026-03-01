@@ -12,10 +12,12 @@ import Font from 'vite-plugin-font';
 
 import mermaid from './src/plugins/mermaid.mjs';
 import rehypeLazyLoadImage from './src/plugins/lazyLoadImage.mjs';
+const { env } = import.meta;
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://example.com',
+  site: process.env.SITE_URL || 'http://localhost:4321',
+  base: process.env.BASE_PATH || '/',
   markdown: {
     remarkPlugins: [remarkMath],
     rehypePlugins: [rehypeKatex, rehypeLazyLoadImage],

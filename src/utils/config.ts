@@ -254,12 +254,17 @@ export const SHARE = typedConfig.share;
 export const SPONSOR = typedConfig.sponsor;
 
 let _BASE_URL = import.meta.env.BASE_URL;
-// normalize BASE_URL, make sure it starts with '/' and does not end with '/'
-if (_BASE_URL.endsWith("/")) {
-  _BASE_URL = _BASE_URL.slice(0, -1);
-}
-if (!_BASE_URL.startsWith("/")) {
-  _BASE_URL = `/${_BASE_URL}`;
+// normalize BASE_URL: root base ('/') becomes '' so that '${BASE_URL}/path' = '/path'
+// non-root base gets leading '/' ensured and trailing '/' stripped
+if (_BASE_URL === '/') {
+  _BASE_URL = '';
+} else {
+  if (_BASE_URL.endsWith("/")) {
+    _BASE_URL = _BASE_URL.slice(0, -1);
+  }
+  if (!_BASE_URL.startsWith("/")) {
+    _BASE_URL = `/${_BASE_URL}`;
+  }
 }
 export const BASE_URL = _BASE_URL;
 
