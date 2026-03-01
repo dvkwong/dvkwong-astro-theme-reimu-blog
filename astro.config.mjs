@@ -16,8 +16,8 @@ const { env } = import.meta;
 
 // https://astro.build/config
 export default defineConfig({
-  site: import.meta.env.SITE_URL || 'http://localhost:4321',
-  base: import.meta.env.BASE_URL || 'dvkwong/',
+  site: process.env.SITE_URL || 'http://localhost:4321',
+  base: process.env.BASE_PATH || '/',
   markdown: {
     remarkPlugins: [remarkMath],
     rehypePlugins: [rehypeKatex, rehypeLazyLoadImage],
